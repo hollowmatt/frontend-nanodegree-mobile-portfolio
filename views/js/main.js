@@ -450,7 +450,8 @@ var resizePizzas = function(size) {
 
   // Iterates through pizza elements on the page and changes their widths
   function changePizzaSizes(size) {
-    //for ease of reading: put in a variable, then change querySelectorAll to getElementsByClassName - much faster
+    // for ease of reading: put into a variable,
+    // then change querySelectorAll to getElementsByClassName - much faster performance
     var pizzas = document.getElementsByClassName(".randomPizzaContainer").length;
     for (var i = 0; i < pizzas; i++) {
       var dx = determineDx(pizzas[i], size);
@@ -503,7 +504,9 @@ function logAverageFrame(times) {   // times is the array of User Timing measure
 function updatePositions() {
   frame++;
   window.performance.mark("mark_start_frame");
-  //add this variable, to keep a reference to the scrollTop rather than recalc everytime - this is how the reference site accomplished it
+  // add this variable, to keep a reference to the scrollTop rather than recalc everytime
+  // this is how the referenced site accomplished it
+  // basically, prevents a requery of the document object through each loop iteration
   var cachedScrollTop = document.body.scrollTop;
 
   var items = document.querySelectorAll('.mover');
