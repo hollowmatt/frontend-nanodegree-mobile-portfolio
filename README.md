@@ -16,4 +16,4 @@ Part 2: Pizza.html (main.js optimization)
     - Also, the https://www.igvita.com/slides/2012/devtools-tips-and-tricks/jank-demo.html site referenced in the code had given insight into how to resolve as well, with the cached document.body.scrollTop rather than query for it in every loop iteration.
 
  - Research on querySelectorAll, searched on Google for performance of it, and ended up on http://ryanmorr.com/abstract-away-the-performance-faults-of-queryselectorall/
-    - this site pointed out that there are much higher performing methods available, so I repleaced it with the getElementsByClassName, which gave a dramatic improvement.
+    - this site pointed out that there are much higher performing methods available, so I replaced the querySelectorAll with the getElementsByClassName, which gave a dramatic improvement.
