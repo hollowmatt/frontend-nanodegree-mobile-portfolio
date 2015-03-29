@@ -503,7 +503,7 @@ function logAverageFrame(times) {   // times is the array of User Timing measure
 function updatePositions() {
   frame++;
   window.performance.mark("mark_start_frame");
-  //add this variable, to keep a reference to the scrollTop rather than recalc everytime
+  //add this variable, to keep a reference to the scrollTop rather than recalc everytime - this is how the reference site accomplished it
   var cachedScrollTop = document.body.scrollTop;
 
   var items = document.querySelectorAll('.mover');
